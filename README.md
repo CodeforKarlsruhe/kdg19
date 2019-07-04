@@ -40,8 +40,8 @@ kdg.ini is loaded by index.php, so adjust the path there. For developmen, you ca
 Adjust the .htaccess file to your webserver configuration
 
 ## Database
-initialise the database from the template like. Make sure you have the proper access rights.
-Update name, user and password according to your host installation.
+initialise the database from the template as shown below. Make sure you have the proper access rights.
+Update name, user and password according to your host installation. YOu might also need to change the dabase name in shared hosting environments. Don't forget to update the ini file as well.
 
 ```
 mysql -p < kdg_structure.sql 
