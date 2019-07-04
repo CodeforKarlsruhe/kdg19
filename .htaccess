@@ -1,0 +1,30 @@
+#  Deny access to .htaccess
+<Files .htaccess>
+Require all denied
+</Files>
+
+# Deny kdg.ini
+<Files kdg.ini>
+Require all denied
+</Files>
+
+# Disable directory browsing
+Options -Indexes
+
+# Hide the contents of directories
+IndexIgnore *
+
+# Deny access to files with some extensions like .ini
+# doesn't work for sql. Why?
+<FilesMatch "\.(ini|json|sql|log|sh)$">
+  Require all denied
+</FilesMatch>
+
+# Rewrite rules
+RewriteEngine On
+Header set Cache-Control "max-age=0, private, no-store, no-cache, must-revalidate"
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php [QSA,L]
+
+
