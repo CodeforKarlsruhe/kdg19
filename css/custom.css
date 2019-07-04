@@ -1,0 +1,137 @@
+/* ka dataa game css */
+body {
+  font-family: Arial;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 5px 0;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin: 5px 0;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-top: 4px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 2px;
+  transition: 0.3s;
+  font-size: 1em;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* basic stuff */
+.darklight {
+  background-color: black!important;
+  color: white!important;
+}
+.brightlight {
+  background-color: white!important;
+  color: black!important;
+}
+
+#mapId { height: 240px; }
+
+.imgData {
+  /* default. will be overwritten by js */
+  width: 320px;
+  height: 240px;
+	padding: 10px;
+	border: solid 2px black;
+}
+
+/* buttons etc */
+.kdg-button {border:solid 1 pt;display:inline-block;padding:2px 2px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+
+.kdg-button {-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+
+.kdg-button-gray {background-color:#aaa;}
+
+/*
+.kdg-button:hover{box-shadow:0 8px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+*/
+
+.kdg-input {border:solid 1 pt;display:inline-block;padding:8px 8px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:left;cursor:pointer;white-space:nowrap}
+
+
+.kdg-card{box-shadow:0 3px 6px 0 rgba(0,0,0,0.2),0 4px 10px 0 rgba(0,0,0,0.19)}
+
+
+.snap {
+  font-size: 1.8em;
+  border: 3px solid Black;
+  padding: 3px;
+  margin: 2px;
+}
+.goodScore {
+  font-size: 1.8em;
+  border: 3px solid Green;
+  padding: 3px;
+  margin: 2px;
+}
+.badScore {
+  font-size: 1.8em;
+  border: 3px solid Red;
+  padding: 3px;
+  margin: 2px;
+}
+
+
+
+/* chart */
+#chart .c3-line-Gesamt {
+  stroke-width: 5px;
+}
+#chart .c3-line-Mittel {
+  stroke-width: 5px;
+}
+#chart .c3-line-Selbst {
+  stroke-width: 5px;
+}
+
+
+/*
+#photo { width: 300px; height: 200px; }
+#monitor { height: 240px; }
+#choice { height: 240px; }
+*/

@@ -1,0 +1,8 @@
+{
+    "require": {
+        "mikecao/flight": "^1.3",
+        "catfan/medoo": "^1.6",
+        "analog/analog": "^1.0",
+        "pear/net_smtp": "^1.8"
+    }
+}
