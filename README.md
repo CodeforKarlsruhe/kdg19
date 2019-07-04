@@ -40,8 +40,8 @@ kdg.ini is loaded by index.php, so adjust the path there. For developmen, you ca
 Adjust the .htaccess file to your webserver configuration
 
 ## Database
-initialise the database from the template like. Make sure you have the proper access rights.
-Update name, user and password according to your host installation.
+initialise the database from the template as shown below. Make sure you have the proper access rights.
+Update name, user and password according to your host installation. YOu might also need to change the dabase name in shared hosting environments. Don't forget to update the ini file as well.
 
 ```
 mysql -p < kdg_structure.sql 
@@ -60,5 +60,9 @@ Please put the following libraries into the js and possibly css directories or u
  * [jsQR](https://github.com/cozmo/jsQR)
 
 All custom code is in custom.js and custom.css
+
+# Face detection and pixelation
+I couldn't get the face detection to work with apache. As a workaroud, I created a python script which updates the database with the pixelated public images and the thumbnails. You could run the script from cron at regular intervalls.
+It needs opencv-python and opencv-utils. The face detection is not very sophisticated but should find images from portraits or selfies.
 
 
