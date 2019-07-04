@@ -61,4 +61,8 @@ Please put the following libraries into the js and possibly css directories or u
 
 All custom code is in custom.js and custom.css
 
+# Face detection and pixelation
+I couldn't get the face detection to work with apache. As a workaroud, I created a python script which updates the database with the pixelated public images and the thumbnails. You could run the script from cron at regular intervalls.
+It needs opencv-python and opencv-utils. The face detection is not very sophisticated but should find images from portraits or selfies.
+
 
